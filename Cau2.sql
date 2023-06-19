@@ -1,0 +1,1 @@
+select madt, tendt, kinhphi from DeTai where kinhphi = (select max(kinhphi) from Detai)

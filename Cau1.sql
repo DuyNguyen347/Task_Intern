@@ -1,0 +1,1 @@
+select madt, tendt from Detai where madt in (select madt from HuongDan group by madt having count(masv) > 1)
